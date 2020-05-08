@@ -10,5 +10,11 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
+  "paths": {
+    "@core/*": ["src/app/core/*"],
+    "@modules/*": ["src/app/modules/*"],
+    "@shared/*": ["src/app/shared/*"],
+    "@app/*": ["src/app/*"]
+  }
 }

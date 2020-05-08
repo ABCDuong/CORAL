@@ -1,0 +1,27 @@
+<div id="side-navigation-container">
+  <app-header></app-header>
+
+  <div class="icons-list-header">
+    <div class="icon-container" (click)="navigate('account-settings')">
+      <i class="material-icons-outlined">account_circle</i>
+    </div>
+
+    <div class="icon-container" (click)="navigate('entry-list-view')">
+      <i class="material-icons-outlined">create</i>
+    </div>
+
+    <div class="icon-container" (click)="navigate('graph-view')">
+      <i class="material-icons-outlined">bar_chart</i>
+    </div>
+  </div>
+
+  <div class="icons-list-footer">
+    <div class="icon-container" (click)="navigate('app-settings')">
+      <i class="material-icons-outlined">settings</i>
+    </div>
+
+    <div class="icon-container" (click)="navigate('app-help')">
+      <i class="material-icons-outlined">help_outline</i>
+    </div>
+  </div>
+</div>

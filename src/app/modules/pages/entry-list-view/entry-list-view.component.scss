@@ -1,0 +1,35 @@
+@import "../../../../styles";
+
+#modify-entries-container {
+  .component-title-container {
+  }
+
+  .entry-container {
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $light-grey;
+    }
+
+    .entry-item-title-section {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .entry-correlations-container {
+    display: flex;
+    flex-flow: column;
+    padding: 0.25rem 0;
+
+    .crl-list-item-text {
+      line-height: 2rem;
+    }
+  }
+}

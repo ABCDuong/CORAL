@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coralNg';
+
+  constructor(
+    private viewContainerRef: ViewContainerRef,
+    private cfr: ComponentFactoryResolver
+  ) {}
+
+  // async getModifyEntriesComponent() {
+  //   this.viewContainerRef.clear();
+
+  //   const { ModifyEntriesComponent } = await import('@modules/pages/modify-entries/modify-entries.component');
+  //   this.viewContainerRef.createComponent(
+  //     this.cfr.resolveComponentFactory(ModifyEntriesComponent)
+  //   );
+  // }
 }

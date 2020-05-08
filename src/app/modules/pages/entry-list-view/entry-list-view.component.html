@@ -1,0 +1,33 @@
+<div id="modify-entries-container"
+     class="page-container">
+  <div class="component-title-container">
+    <span class="page-title-text">My List</span>
+    <i class="title-icon material-icons-outlined"
+       (click)="createEntry()">
+      add_circle_outline
+    </i>
+  </div>
+
+  <div class="entries-container crl-card">
+    <div *ngFor="let entry of entrySamples"
+         class="entry-container"
+         (click)="entry.viewCorrelations = !entry.viewCorrelations">
+      <div class="entry-item-title-section">
+        <div class="entry-title">
+          {{ entry.entryTitle }} ({{entry.correlations.length}})
+        </div>
+
+        <i class="material-icons-outlined crl-jade" (click)="editEntry(entry.uid)">create</i>
+      </div>
+
+      <hr *ngIf="entry.viewCorrelations && (entry.correlations && entry.correlations.length > 0)"
+          class="crl-line-splitter">
+      <div *ngIf="entry.viewCorrelations && (entry.correlations && entry.correlations.length > 0)"
+           class="entry-correlations-container">
+        <div *ngFor="let corr of entry.correlations">
+          <span class="crl-list-item-text">{{ corr }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

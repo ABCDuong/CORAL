@@ -1,0 +1,10 @@
+@import '../styles';
+
+#app-main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#app-body {
+  padding: 1rem;
+}

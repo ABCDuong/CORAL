@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+$jade: #83c9b9;
+$dark-grey: #262626;
+$light-grey: #e5e5e5;
+$light-grey-2: #ecf0f1;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: $dark-grey;
+  margin: 0;
+  font-family: "Quicksand", sans-serif, sans-serif;
+}
+
+i {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.page-container {
+  padding: 2rem 1.75rem;
+}
+
+.component-title-container {
+  margin-bottom: 1rem;
+
+  .page-title-text {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  .title-icon {
+    color: $jade;
+  }
+}
+
+.crl-card {
+  min-width: 20rem;
+  box-shadow: 1px 5px 8px $light-grey;
+
+  .crl-jade {
+    color: $jade;
+  }
+
+  .crl-line-splitter {
+    height: 1px;
+    background-color: $light-grey-2;
+    border: none;
+    width: 88%;
+    margin: 0.75rem auto;
+    transform: translateX(-0.5rem);
+  }
+}

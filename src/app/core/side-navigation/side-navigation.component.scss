@@ -1,0 +1,42 @@
+@import '../../../styles';
+
+#side-navigation-container {
+  width: 6rem;
+  height: 100vh;
+  background-color: #FCF9EB;
+  display: flex;
+  flex-direction: column;
+
+  .icons-list-header,
+  .icons-list-footer {
+    color: $jade;
+    padding: 1rem 0;
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #EBF4F6;
+      }
+    }
+
+    i {
+      font-size: 1.75rem;
+      padding: 1rem 0;
+      display: flex;
+      align-self: center;
+    }
+  }
+
+  .icons-list-header {
+    margin-bottom: auto;
+  }
+
+  .icons-list-footer {
+    margin-bottom: unset;
+    margin-top: auto;
+  }
+}

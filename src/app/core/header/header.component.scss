@@ -1,0 +1,13 @@
+@import '../../../styles';
+
+#top-navigation-container {
+  background-color: #F76D62;
+
+  .app-title {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: unset;
+    padding: 1rem;
+  }
+}
